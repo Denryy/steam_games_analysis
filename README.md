@@ -4,10 +4,10 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
-- [Tools & Technologies](#tools--technologies)
+- [Tools and Technologies](#tools-and-technologies)
 - [Project Structure](#project-structure)
 - [Dataset](#dataset)
 - [Data Collection](#data-collection)
@@ -22,7 +22,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates a complete data analytics workflow applied to Steam's game catalog. The goal is to extract meaningful insights about game pricing, popularity, genres, and publisher activity using a combination of Python, SQL, and Power BI.
 
@@ -35,7 +35,7 @@ This project demonstrates a complete data analytics workflow applied to Steam's 
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools and Technologies
 
 | Category | Tools |
 |---|---|
@@ -48,7 +48,7 @@ This project demonstrates a complete data analytics workflow applied to Steam's 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 steam_capstone/
@@ -82,7 +82,7 @@ steam_capstone/
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 The dataset was collected from the Steam platform and contains the following fields:
 
@@ -103,7 +103,7 @@ The dataset was collected from the Steam platform and contains the following fie
 
 ---
 
-## 🔍 Data Collection
+## Data Collection
 
 Data was collected using a custom Python script (`collect_steam_data.py`) that queries the Steam Store API.
 
@@ -116,7 +116,7 @@ The script:
 
 ---
 
-## 🧹 Data Cleaning
+## Data Cleaning
 
 Cleaning was performed in Jupyter Notebook. Key steps included:
 
@@ -141,22 +141,22 @@ data/processed/steam_games_cleaned.csv
 
 ---
 
-## 📈 Exploratory Data Analysis
+## Exploratory Data Analysis
 
 EDA was conducted in `notebooks/steam_data_analysis.ipynb` using Pandas, Matplotlib, Seaborn, and Plotly.
 
 **Analysis areas covered:**
 
-- 📅 **Release trends** — number of games released per year; growth acceleration in recent years
-- 💰 **Pricing analysis** — distribution of prices; free vs. paid ratio; price categories
-- ⭐ **Recommendations** — distribution and outliers; most-recommended titles
-- 🎯 **Metacritic scores** — score distribution; correlation with recommendations and price
-- 🏷️ **Genre analysis** — most common genres; genre combinations; avg price and popularity by genre
-- 🖥️ **Platform support** — Windows vs. Mac vs. Linux game availability
+- **Release trends** — number of games released per year; growth acceleration in recent years
+- **Pricing analysis** — distribution of prices; free vs. paid ratio; price categories
+- **Recommendations** — distribution and outliers; most-recommended titles
+- **Metacritic scores** — score distribution; correlation with recommendations and price
+- **Genre analysis** — most common genres; genre combinations; avg price and popularity by genre
+- **Platform support** — Windows vs. Mac vs. Linux game availability
 
 ---
 
-## 🗄️ SQL Analysis
+## SQL Analysis
 
 All SQL queries are in `sql/steam_analysis_queries.sql` and were run using **PostgreSQL**.
 
@@ -174,11 +174,9 @@ All SQL queries are in `sql/steam_analysis_queries.sql` and were run using **Pos
 
 ---
 
-## 📊 Power BI Dashboard
+## Power BI Dashboard
 
 The dashboard (`dashboard/steam_dashboard.pbix`) consists of **4 pages** with a custom dark Steam-inspired neon theme.
-
----
 
 ### Page 1 — Overview
 
@@ -191,8 +189,6 @@ High-level summary of the dataset.
 - Games released per year (line/bar chart)
 - Games by price category (donut chart)
 
----
-
 ### Page 2 — Genres Analysis
 
 Deep dive into game genres.
@@ -202,9 +198,7 @@ Deep dive into game genres.
 - Average price by genre
 - Genre summary table (sortable)
 
----
-
-### Page 3 — Publishers & Developers
+### Page 3 — Publishers and Developers
 
 Focus on the companies behind the games.
 
@@ -213,9 +207,7 @@ Focus on the companies behind the games.
 - Top publishers by total user recommendations
 - Publisher summary detail table
 
----
-
-### Page 4 — Popularity & Games
+### Page 4 — Popularity and Games
 
 Individual game performance analysis.
 
@@ -226,7 +218,7 @@ Individual game performance analysis.
 
 ---
 
-## 📐 DAX Measures
+## DAX Measures
 
 Custom DAX measures used across the dashboard:
 
@@ -281,7 +273,7 @@ CALCULATE(
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 1. **Paid games dominate** — the majority of games on Steam have a price, though free-to-play titles receive disproportionately high recommendation counts due to lower access barriers.
 2. **Explosive growth in recent years** — the number of new Steam releases has grown significantly year-over-year, reflecting lower barriers to indie publishing.
@@ -293,7 +285,7 @@ CALCULATE(
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### 1. Clone the repository
 
@@ -348,7 +340,7 @@ Make sure to refresh the data source path if needed.
 
 ---
 
-## 👤 Author
+## Author
 
 **Arman Zhetessov**  
 Data Analysis Capstone Project
